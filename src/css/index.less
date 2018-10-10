@@ -1,0 +1,323 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+img{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    background: url(../images/bg_2.png) center center no-repeat;
+}
+/*右侧悬浮按钮样式*/
+.logo{
+	position: fixed;
+	top: 0px;
+	left: 80px;
+	z-index: 3;
+}
+.swiper-pagination-bullet{
+	background: #D8D8D8;
+	width: 21px;
+	height: 21px;
+    display: inline-block;
+    border-radius: 100%;
+    opacity: 1;
+    background: url(../images/scroll_2.png) no-repeat center center;
+}
+.swiper-pagination-bullet-active{
+	background-color: #f5a723;
+	width: 21px;
+	height: 21px;
+	background: url(../images/scroll_1.png) no-repeat center center;
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 30px 0;
+    display: block;
+}
+.swiper-container-vertical > .swiper-pagination-bullets{
+	right: 40px;
+}
+/*主体样式*/
+.slide_bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.slide_bg img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -540px;
+	margin-left: -960px;
+}
+.slide_content{
+	width: 1280px;
+	height: 768px;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	margin-left: -640px;
+	margin-top:-384px;
+}
+.slide_content_left{
+	width: 50%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+}
+.slide_content_left h1{
+	font-size: 60px;
+	color: #6355BC;
+	margin: 165px 0 0px 80px;
+	font-weight: 600;
+}
+.slide_content_left h2{
+	font-size: 36px;
+	color: #6355BC;
+	margin: 20px 0 0 80px;
+}
+.slide_content_left img{
+	width: 154px;
+	height: 154px;
+	background-color: #f00;
+	margin: 66px 0 0 85px;
+	display: block;
+}
+.slide_content_left button{
+	background-image: linear-gradient(-257deg, #5498C3 0%, #8771E4 100%);
+	box-shadow: 0 2px 14px -2px rgba(37,5,117,0.45);
+	border-radius: 100px;
+	width: 164px;
+	height: 43px;
+	border: none;
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 1.44px;
+	margin: 20px 10px 10px 80px;
+	outline: none;
+	cursor: pointer;
+}
+ /*第二屏*/
+.slide_content .slide_left{
+	float: left;
+	overflow: hidden;
+}
+.slide_content .slide_left .phone{
+	margin: 100px 0 0 60px;
+	
+}
+.slide_content .slide_left .fixlogo{
+	position: absolute;
+	top: 38px;
+	left: 196px;
+	z-index: 3;
+}
+.slide_content .slide_left .slideimg{
+	width: 230px;
+	height: 410px;
+	position: absolute;
+	top: 157px;
+	left: 78px;
+	overflow: hidden;
+}
+.slide_content .slide_left .slideimg ul{
+	width: 690px;
+	height: 410px;
+	overflow: hidden;
+	/*transition:all 0.5s;*/
+}
+.slide_content .slide_left .slideimg ul li{
+	float: left;
+}
+.slide_content .slide_right{
+	float: left;
+	overflow: hidden;
+}
+.slide_content .slide_right h1{
+	font-size: 44px;
+	color: #FFFFFF;
+	letter-spacing: 2.87px;
+	font-weight: 600;
+	width: 677px;
+	margin: 212px 0 30px 40px;	
+}
+.slide_content .slide_right h2{
+	font-size: 26px;
+	color: #EFEDFC;
+	letter-spacing: 0;
+	line-height: 26px;
+	margin: 20px 0 0 40px;	
+}
+/*第三屏*/
+.slide_content .slide_left h1{
+	font-size: 44px;
+	color: #FFFFFF;
+	letter-spacing: 2.87px;
+	font-weight: 600;
+	width: 677px;
+	margin: 212px 0 30px 76px;	
+}
+.slide_content .slide_left h2{
+	font-size: 26px;
+	color: #EFEDFC;
+	letter-spacing: 0;
+	line-height: 26px;
+	margin: 20px 0 0 76px;	
+}
+.slide_content .slide_right .phone{
+	margin: 100px 0 0 100px;
+}
+.slide_content .slide_right .fixlogo{
+	position: absolute;
+	bottom: 38px;
+	right: 300px;
+}
+.slide_content .slide_right .slideimg{
+	width: 230px;
+	height: 410px;
+	position: absolute;
+	    top: 157px;
+    right: 178px;
+	overflow: hidden;
+}
+.slide_content .slide_right .slideimg ul{
+	width: 690px;
+	height: 410px;
+	overflow: hidden;
+}
+.slide_content .slide_right .slideimg ul li{
+	float: left;
+	width: 230px;
+    height: 410px
+}
+/*第四屏*/
+.slide_content .slide_right .phone{
+	margin: 100px 0 0 100px;
+}
+.slide_content .slide_right .fixlogo3{
+	position: absolute;
+	top: 18px;
+	right: 0px;
+}
+.slide_content .slide_right .slideimg3{
+	width: 230px;
+	height: 410px;
+	position: absolute;
+	top: 157px;
+    right: 153px;
+	overflow: hidden;
+}
+.slide_content .slide_right .slideimg3 ul{
+	width: 690px;
+	height: 410px;
+	overflow: hidden;
+}
+.slide_content .slide_right .slideimg3 ul li{
+	float: left;
+	width: 230px;
+    height: 410px
+}
+/*第六屏*/
+.slide_content .slide_left6{
+	float: left;
+	overflow: hidden;
+}
+.slide_content .slide_left6 h1{
+	font-size: 44px;
+	color: #FFFFFF;
+	letter-spacing: 2.87px;
+	font-weight: 600;
+	width: 677px;
+	margin: 212px 0 30px 76px;	
+}
+.slide_content .slide_left6 h2{
+	font-size: 26px;
+	color: #EFEDFC;
+	letter-spacing: 0;
+	line-height: 26px;
+	width: 677px;
+	margin: 20px 0 0 76px;	
+}
+.slide_content .slide_right .fixlogo6{
+	position: absolute;
+	top: 18px;
+	right: 300px;
+}
+/*动画控件*/
+.animate_slide{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+.animate_slide .ani_1{
+	position: absolute;
+	bottom: 0;
+	left: 15%;
+	opacity: 0;
+}
+.animate_slide .ani_2{
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	opacity: 0;
+}
+/*手机端样式*/
+.phone_content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.phone_content .logo{
+	top: 0;
+	left: 0;
+}
+.phone_content .logo img{
+	width: 3.146rem
+}
